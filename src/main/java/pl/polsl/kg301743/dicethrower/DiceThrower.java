@@ -1,37 +1,37 @@
 package pl.polsl.kg301743.dicethrower;
 
 import pl.polsl.kg301743.dicethrower.controller.Controller;
-import pl.polsl.kg301743.dicethrower.model.Dice;
-
-//[x] podział na pakiety klas wg szablonu  model-widok-kontroler (MVC),
-//[x] odbiór parametrów wywołania programu do aplikacji z linii poleceń,
-//[x] w przypadku braku parametrów w linii wywołania, aplikacja powinna zapewnić interakcję z użytkownikiem w celu pobrania danych z użyciem strumieni systemowych bądź GUI,
-//pełne, planowane do zaimplementowania API modelu,
-//[x] wyświetlanie jakiegokolwiek sensownego wyniku,
-//[x] oraz inne elementy wskazane przez osobę prowadzącą zajęcia,
-//poprawne przygotowanie całości prototypu w postaci zarchiwizowanego katalogu projektu dla środowiska NetBeans IDE 18.
+import pl.polsl.kg301743.dicethrower.model.Model;
+import pl.polsl.kg301743.dicethrower.view.View;
 
 /**
- *
+ * RPG DiceThrower is a simple Java program, that will return you an array of 
+ * random number of numbers from given range in RPG friendly format (3K10, 2K5) 
  * @author Krystian Gagracz kg301743@student.pl
  * @version 1.0.0
  */
 public class DiceThrower {
-    
+    /**
+     * Main method in program, creating instances of MVC classes and runing their methods
+     * @param args main arguments 
+     */
     public static void main(String[] args) {
-        Controller controller = new Controller();
+        //create instances of MVC model classes
+        View view = new View();
+        Model model = new Model();
+        Controller controller = new Controller(view, model);
        
+        //checking if input from user is valid
         String throwType = controller.getThrowTypeFromUser(args);
         if(!controller.validateUserInput(throwType)) {
             return;
         }
         
+        //throwing dice 
         int numberOfThrows = Integer.parseInt(throwType.split("K")[0]);
         int diceSize = Integer.parseInt(throwType.split("K")[1]);
-        Dice dice = new Dice(diceSize);
-        int[] results = dice.throwDice(numberOfThrows);
-        for (int i = 0; i < results.length; i++) {
-            System.out.println("Wyrzucono: " + results[i]);
-        }
+        int[] results = controller.throwDice(numberOfThrows, diceSize);
+        //displaying results
+        view.writeAllResults(results);
     }
 }

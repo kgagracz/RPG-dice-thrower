@@ -1,0 +1,46 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'C:/Users/Krystian/Desktop/zajawki/programowanie/DiceThrower/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Krystian/Desktop/zajawki/programowanie/DiceThrower/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'DiceThrower 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'DiceThrower 1.0-SNAPSHOT API'
+pl.polsl.kg301743.dicethrower.controller
+pl.polsl.kg301743.dicethrower
+pl.polsl.kg301743.dicethrower.model
+pl.polsl.kg301743.dicethrower.view
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\src\main\java = 1701521133557
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\allclasses-index.html = 1701719929307
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\allpackages-index.html = 1701719929311
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\element-list = 1701719929191
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\help-doc.html = 1701719929350
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\index-all.html = 1701719929341
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\index.html = 1701719929291
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\jquery-ui.overrides.css = 1701719929376
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\member-search-index.js = 1701719929322
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\module-search-index.js = 1701719929314
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\overview-summary.html = 1701719929344
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\overview-tree.html = 1701719929285
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\package-search-index.js = 1701719929315
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\script.js = 1701719929355
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\search.js = 1701719929358
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\stylesheet.css = 1701719929353
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\tag-search-index.js = 1701719929323
+C:\Users\Krystian\Desktop\zajawki\programowanie\DiceThrower\target\site\apidocs\type-search-index.js = 1701719929316
