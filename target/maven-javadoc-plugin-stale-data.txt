@@ -1,0 +1,47 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'D:/studia/sem5/JAVA/RPG-dice-thrower/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/studia/sem5/JAVA/RPG-dice-thrower/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'DiceThrower 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'DiceThrower 1.0-SNAPSHOT API'
+pl.polsl.kg301743.dicethrower.controller
+pl.polsl.kg301743.dicethrower
+pl.polsl.kg301743.dicethrower.model
+pl.polsl.kg301743.dicethrower.view
+D:\studia\sem5\JAVA\RPG-dice-thrower\src\main\java = 1702050036836
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\allclasses-index.html = 1702053255561
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\allpackages-index.html = 1702053255563
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\element-list = 1702053255443
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\help-doc.html = 1702053255598
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\index-all.html = 1702053255592
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\index.html = 1702053255545
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\jquery-ui.overrides.css = 1702053255711
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\member-search-index.js = 1702053255567
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\module-search-index.js = 1702053255564
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\overview-summary.html = 1702053255594
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\overview-tree.html = 1702053255539
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\package-search-index.js = 1702053255565
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\script.js = 1702053255624
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\search.js = 1702053255626
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\serialized-form.html = 1702053255494
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\stylesheet.css = 1702053255609
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\tag-search-index.js = 1702053255568
+D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\type-search-index.js = 1702053255566
