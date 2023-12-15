@@ -1,5 +1,6 @@
 package pl.polsl.kg301743.dicethrower;
 
+import java.util.List;
 import pl.polsl.kg301743.dicethrower.controller.Controller;
 import pl.polsl.kg301743.dicethrower.model.Model;
 import pl.polsl.kg301743.dicethrower.view.View;
@@ -31,7 +32,7 @@ public class DiceThrower {
         //throwing dice 
         int numberOfThrows = Integer.parseInt(throwType.split("K")[0]);
         int diceSize = Integer.parseInt(throwType.split("K")[1]);
-        int[] results = controller.throwDice(numberOfThrows, diceSize);
+        List<Integer> results = controller.throwDice(numberOfThrows, diceSize);
         //displaying results
         view.writeAllResults(results);
     }

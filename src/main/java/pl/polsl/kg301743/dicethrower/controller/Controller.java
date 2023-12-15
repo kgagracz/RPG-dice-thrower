@@ -1,5 +1,8 @@
 package pl.polsl.kg301743.dicethrower.controller;
 
+import pl.polsl.kg301743.dicethrower.model.HandledException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import pl.polsl.kg301743.dicethrower.model.Model;
 import pl.polsl.kg301743.dicethrower.view.View;
@@ -7,6 +10,7 @@ import pl.polsl.kg301743.dicethrower.view.View;
 /**
  * Controller class getting throw type from user by command line or GUI
  * @author Krystian Gagracz kg301743@student.pl
+ * @version 1.0.0
  */
 public class Controller {    
     /**An instance of MVC view class*/
@@ -56,7 +60,7 @@ public class Controller {
     * @return string representing throw type provided by user 
     */
     public String readThrowTypeFromUser(String[] args) {
-        String throwType = "";
+        String throwType;
         if(args.length == 0) {
             throwType = readThrowTypeByConsole();
         } else {
@@ -71,20 +75,20 @@ public class Controller {
      * @param diceSize defines size of a dice beeing thrown
      * @return result of {@link Model#throwDice(int, int) throwDice} method
      */
-    public int[] throwDice(int numberOfThrows, int diceSize) {
+    public List<Integer> throwDice(int numberOfThrows, int diceSize) {
         try {
             return this.model.throwDice(numberOfThrows, diceSize);
         } catch (HandledException e) {
             view.wirteMessage("Error " + e.getCode() + ": " + e.getMessage());
         }
-       return new int[0];
+       return new ArrayList<>();
     }
     
     /**
-     * Method calling {@link View#writeAllResults(int[]) writeAllResults} method
+     * Method calling {@link View#writeAllResults(List<Integer>) writeAllResults} method
      * @param results results of {@link Controller#throwDice(int, int) throwDice} method
      */
-    public void showResults(int[] results) {
+    public void showResults(List<Integer> results) {
         view.writeAllResults(results);
     }
 }

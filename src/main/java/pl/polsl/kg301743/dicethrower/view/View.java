@@ -1,18 +1,19 @@
 package pl.polsl.kg301743.dicethrower.view;
 
+import java.util.List;
+
 /**
  * Class representing application view
- * @author Krystian Gagracz kg301743@student.pl 
+ * @author Krystian Gagracz kg301743@student.pl
+ * @version 1.0.0
  */
 public class View {
     /**
      * Method displaying all thrown numbers
      * @param input array of thrown numbers (int)
      */
-    public void writeAllResults(int[] input) {
-        for (int i = 0; i < input.length; i++) {
-            System.out.println("Rzut " + (i+1) + ": " + input[i]);
-        }
+    public void writeAllResults(List<Integer> input) {
+        input.forEach(result -> System.out.println("Rzut " + (input.indexOf(result)+1) + ": " + result));
     }
     /**
      * Method displaying message informing about input validation result

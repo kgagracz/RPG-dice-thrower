@@ -6,5 +6,6 @@ pl\polsl\kg301743\dicethrower\controller\HandledException.class
 pl\polsl\kg301743\dicethrower\model\package-info.class
 pl\polsl\kg301743\dicethrower\package-info.class
 pl\polsl\kg301743\dicethrower\controller\Controller.class
+pl\polsl\kg301743\dicethrower\controller\HandledException$ErrorCode.class
 pl\polsl\kg301743\dicethrower\model\Model.class
 pl\polsl\kg301743\dicethrower\model\Dice.class
