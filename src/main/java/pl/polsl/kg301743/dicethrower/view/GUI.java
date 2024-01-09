@@ -1,5 +1,6 @@
 package pl.polsl.kg301743.dicethrower.view;
 
+import java.awt.event.KeyEvent;
 import java.util.List;
 import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
@@ -26,6 +27,7 @@ public class GUI extends javax.swing.JFrame {
         this.controller = controller;
         this.resultsListModel = new DefaultListModel();
         initComponents();
+        TextFieldThrowType.setText(args[0]);
     }
 
     /**
@@ -40,7 +42,7 @@ public class GUI extends javax.swing.JFrame {
         LabelThrowType = new javax.swing.JLabel();
         TextFieldThrowType = new javax.swing.JTextField();
         ButtonThrow = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        ScrollableListResults = new javax.swing.JScrollPane();
         ListResults = new javax.swing.JList<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -64,7 +66,7 @@ public class GUI extends javax.swing.JFrame {
         });
 
         ListResults.setToolTipText("Lista wszystkich wyników rzutów.");
-        jScrollPane1.setViewportView(ListResults);
+        ScrollableListResults.setViewportView(ListResults);
         ListResults.getAccessibleContext().setAccessibleName("ListResults");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -78,7 +80,7 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(LabelThrowType)
                         .addGap(18, 18, 18)
                         .addComponent(TextFieldThrowType, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ScrollableListResults, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(40, 40, 40)
                 .addComponent(ButtonThrow)
                 .addContainerGap(123, Short.MAX_VALUE))
@@ -92,21 +94,28 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(TextFieldThrowType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ButtonThrow))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ScrollableListResults, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(121, Short.MAX_VALUE))
         );
 
         LabelThrowType.getAccessibleContext().setAccessibleName("LabelThrowType");
         TextFieldThrowType.getAccessibleContext().setAccessibleName("TextFieldThrowType");
         ButtonThrow.getAccessibleContext().setAccessibleName("ButtonThrow");
+        ScrollableListResults.getAccessibleContext().setAccessibleName("ScrollableListResults");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * This method is called after changing TextField value
+     */
     private void TextFieldThrowTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextFieldThrowTypeActionPerformed
 
     }//GEN-LAST:event_TextFieldThrowTypeActionPerformed
-    
+       
+    /**
+     * This method is called after clicking ButtonThrow
+     */
     private void ButtonThrowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonThrowActionPerformed
         //clearing components
         this.resultsListModel = new DefaultListModel();
@@ -129,8 +138,19 @@ public class GUI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_ButtonThrowActionPerformed
-
+   
     /**
+     * This method is called on key press and should focus TextFieldThrowType
+     */
+        private static void handleKeyPress(KeyEvent evt, GUI gui) {
+        // Check if the pressed key is the one you want to use to set focus
+            if (evt.getKeyChar() == 'T' || evt.getKeyChar() == 't') {
+                gui.TextFieldThrowType.requestFocusInWindow();
+            }
+    }
+    
+    /**
+     * Main method of program.
      * @param args the command line arguments
      */
     public static void main(String args[]) {
@@ -162,7 +182,15 @@ public class GUI extends javax.swing.JFrame {
             public void run() {
                 Model model = new Model();
                 Controller controller = new Controller(model);
-                new GUI(model, controller, args).setVisible(true);
+                GUI gui = new GUI(model, controller, args);
+                gui.setVisible(true);
+            
+                         // Add KeyListener to set focus on TextFieldThrowType when 'T' key is pressed
+                gui.addKeyListener(new java.awt.event.KeyAdapter() {
+                    public void keyPressed(java.awt.event.KeyEvent evt) {
+                        handleKeyPress(evt, gui);
+                    }
+                });
             }
         });
         
@@ -172,7 +200,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton ButtonThrow;
     private javax.swing.JLabel LabelThrowType;
     private javax.swing.JList<String> ListResults;
+    private javax.swing.JScrollPane ScrollableListResults;
     private javax.swing.JTextField TextFieldThrowType;
-    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

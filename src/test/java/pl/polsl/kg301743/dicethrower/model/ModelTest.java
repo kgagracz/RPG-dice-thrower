@@ -25,7 +25,7 @@ public class ModelTest {
         try {
             List<Integer> result = model.throwDice(throwTimes, diceSize);
             assertEquals(expSize, result.size(), "Thrown more times than provided by user");
-            result.forEach(singleResult -> assertTrue(singleResult < diceSize));
+            result.forEach(singleResult -> assertTrue(singleResult <= diceSize));
         } catch (HandledException e) {
             fail("Exception occured");
         }

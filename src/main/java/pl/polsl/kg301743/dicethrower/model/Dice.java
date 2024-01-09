@@ -1,6 +1,4 @@
 package pl.polsl.kg301743.dicethrower.model;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;

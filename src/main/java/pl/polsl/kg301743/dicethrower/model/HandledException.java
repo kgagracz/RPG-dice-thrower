@@ -3,6 +3,7 @@ package pl.polsl.kg301743.dicethrower.model;
 /**
  *  Class responsible for handling exceptions in program
  * @author Krystian Gagracz
+ * @version 1.0.0
  */
 public class HandledException extends Exception {
     /**Code of exception defined in constructor*/
