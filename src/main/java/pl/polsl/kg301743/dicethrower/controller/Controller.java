@@ -2,10 +2,10 @@ package pl.polsl.kg301743.dicethrower.controller;
 
 import pl.polsl.kg301743.dicethrower.model.HandledException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import pl.polsl.kg301743.dicethrower.model.Model;
-import pl.polsl.kg301743.dicethrower.view.View;
 
 /**
  * Controller class getting throw type from user by command line or GUI
@@ -13,19 +13,15 @@ import pl.polsl.kg301743.dicethrower.view.View;
  * @version 1.0.0
  */
 public class Controller {    
-    /**An instance of MVC view class*/
-   final private View view; 
     /**An instance of MVC model class*/
    final private Model model;
    
    /**
     * Controller constructor including dependency injection
-    * @param view an instance of View class
     * @param model an instance of Model class
     */
-    public Controller(View view, Model model) {
+    public Controller(Model model) {
         this.model = model;
-        this.view = view;
     }
     
     /**
@@ -33,7 +29,6 @@ public class Controller {
     */
     private String readThrowTypeByConsole() {
         Scanner scanner = new Scanner(System.in);
-        view.wirteMessage("Podaj typ rzutu (np. 4K7, 1K10)");
         return scanner.next();
     }
     
@@ -44,11 +39,9 @@ public class Controller {
     */
     public boolean validateUserInput(String input){ // nie jestem pewien czy to dobre miejsce na ta metodę
         if(!input.toUpperCase().contains("K")) {
-            view.wirteValidationMessage("Niepoprawny format typu rzutu (brak litery 'K').");
             return false;
         }
         if(input.charAt(0) != (int)input.charAt(0)) {
-            view.wirteValidationMessage("Niepoprawny format typu rzutu (pierwszy znak nie jest cyfra).");
             return false;
         }
         return true;
@@ -78,9 +71,7 @@ public class Controller {
     public List<Integer> throwDice(int numberOfThrows, int diceSize) {
         try {
             return this.model.throwDice(numberOfThrows, diceSize);
-        } catch (HandledException e) {
-            view.wirteMessage("Error " + e.getCode() + ": " + e.getMessage());
-        }
+        } catch (HandledException e) {        }
        return new ArrayList<>();
     }
     
@@ -88,7 +79,17 @@ public class Controller {
      * Method calling {@link View#writeAllResults(List<Integer>) writeAllResults} method
      * @param results results of {@link Controller#throwDice(int, int) throwDice} method
      */
-    public void showResults(List<Integer> results) {
-        view.writeAllResults(results);
+    public void showResults(List<Integer> results) {    }
+    
+    /**
+     * Method parsing input from user to List (throwTimes, diceSize)
+     * @param userInput input provided by user
+     * @return List of integer (throwTimes, diceSize)
+     */
+    public List<Integer> parseUserInput(String userInput){
+        String userInputUpperCase = userInput.toUpperCase();
+        int numberOfThrows = Integer.parseInt(userInputUpperCase.split("K")[0]);
+        int diceSize = Integer.parseInt(userInputUpperCase.split("K")[1]);
+        return Arrays.asList(numberOfThrows, diceSize);
     }
 }

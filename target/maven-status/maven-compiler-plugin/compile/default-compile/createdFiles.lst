@@ -1,11 +1,6 @@
-pl\polsl\kg301743\dicethrower\view\View.class
-pl\polsl\kg301743\dicethrower\controller\package-info.class
-pl\polsl\kg301743\dicethrower\DiceThrower.class
-pl\polsl\kg301743\dicethrower\view\package-info.class
-pl\polsl\kg301743\dicethrower\controller\HandledException.class
-pl\polsl\kg301743\dicethrower\model\package-info.class
-pl\polsl\kg301743\dicethrower\package-info.class
-pl\polsl\kg301743\dicethrower\controller\Controller.class
-pl\polsl\kg301743\dicethrower\controller\HandledException$ErrorCode.class
+pl\polsl\kg301743\dicethrower\model\HandledException.class
+pl\polsl\kg301743\dicethrower\model\HandledException$ErrorCode.class
+servlet\Error.class
+servlet\ThrowDice.class
 pl\polsl\kg301743\dicethrower\model\Model.class
 pl\polsl\kg301743\dicethrower\model\Dice.class
