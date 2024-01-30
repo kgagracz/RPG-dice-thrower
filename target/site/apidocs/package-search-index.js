@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"pl.polsl.kg301743.dicethrower"},{"l":"pl.polsl.kg301743.dicethrower.controller"},{"l":"pl.polsl.kg301743.dicethrower.model"},{"l":"pl.polsl.kg301743.dicethrower.view"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"listener"},{"l":"model"},{"l":"servlet"}];updateSearchResults();

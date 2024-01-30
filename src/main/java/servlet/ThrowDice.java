@@ -1,5 +1,6 @@
 package servlet;
 
+import jakarta.servlet.ServletContext;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -11,17 +12,23 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
-import pl.polsl.kg301743.dicethrower.model.HandledException;
-import pl.polsl.kg301743.dicethrower.model.Model;
+import model.HandledException;
+import model.Model;
 
 /**
- *
+ * Servlet responsible for throwing a dice and displaying results
  * @author Krystian Gagracz
  */
 @WebServlet(name = "ThrowDice", urlPatterns = {"/ThrowDice"})
 public class ThrowDice extends HttpServlet {
-
-    private Model model = new Model();
+    private Model model;
+    
+    @Override
+    public void init() {
+        ServletContext context = getServletContext();
+        model = (Model) context.getAttribute("model");
+    }
+    
     /**
      * Method parsing input from user to List (throwTimes, diceSize)
      * @param userInput input provided by user
@@ -109,6 +116,7 @@ public class ThrowDice extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Wynik rzutów kostką " + throwType + ":</h1>");
+            
             out.println("<ul>");
             results.forEach(result -> out.println("<li>"+result+"</li>"));
             out.println("</ul>");

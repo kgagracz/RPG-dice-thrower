@@ -1,0 +1,5 @@
+# Created at 2024-01-30T19:11:11.664
+Boot Manifest-JAR contains absolute paths in classpath 'D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
