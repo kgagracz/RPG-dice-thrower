@@ -1,47 +1,79 @@
 @options
 @packages
+-classpath
+'C:/Users/x/.m2/repository/jakarta/platform/jakarta.jakartaee-api/10.0.0/jakarta.jakartaee-api-10.0.0.jar;C:/Users/x/.m2/repository/jakarta/platform/jakarta.jakartaee-web-api/10.0.0/jakarta.jakartaee-web-api-10.0.0.jar;C:/Users/x/.m2/repository/jakarta/servlet/jakarta.servlet-api/6.0.0/jakarta.servlet-api-6.0.0.jar;C:/Users/x/.m2/repository/jakarta/servlet/jsp/jakarta.servlet.jsp-api/3.1.0/jakarta.servlet.jsp-api-3.1.0.jar;C:/Users/x/.m2/repository/jakarta/el/jakarta.el-api/5.0.1/jakarta.el-api-5.0.1.jar;C:/Users/x/.m2/repository/jakarta/servlet/jsp/jstl/jakarta.servlet.jsp.jstl-api/3.0.0/jakarta.servlet.jsp.jstl-api-3.0.0.jar;C:/Users/x/.m2/repository/jakarta/faces/jakarta.faces-api/4.0.1/jakarta.faces-api-4.0.1.jar;C:/Users/x/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.1.0/jakarta.ws.rs-api-3.1.0.jar;C:/Users/x/.m2/repository/jakarta/websocket/jakarta.websocket-api/2.1.0/jakarta.websocket-api-2.1.0.jar;C:/Users/x/.m2/repository/jakarta/websocket/jakarta.websocket-client-api/2.1.0/jakarta.websocket-client-api-2.1.0.jar;C:/Users/x/.m2/repository/jakarta/json/jakarta.json-api/2.1.0/jakarta.json-api-2.1.0.jar;C:/Users/x/.m2/repository/jakarta/json/bind/jakarta.json.bind-api/3.0.0/jakarta.json.bind-api-3.0.0.jar;C:/Users/x/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar;C:/Users/x/.m2/repository/jakarta/ejb/jakarta.ejb-api/4.0.1/jakarta.ejb-api-4.0.1.jar;C:/Users/x/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar;C:/Users/x/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar;C:/Users/x/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar;C:/Users/x/.m2/repository/jakarta/interceptor/jakarta.interceptor-api/2.1.0/jakarta.interceptor-api-2.1.0.jar;C:/Users/x/.m2/repository/jakarta/enterprise/jakarta.enterprise.cdi-api/4.0.1/jakarta.enterprise.cdi-api-4.0.1.jar;C:/Users/x/.m2/repository/jakarta/enterprise/jakarta.enterprise.lang-model/4.0.1/jakarta.enterprise.lang-model-4.0.1.jar;C:/Users/x/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar;C:/Users/x/.m2/repository/jakarta/authentication/jakarta.authentication-api/3.0.0/jakarta.authentication-api-3.0.0.jar;C:/Users/x/.m2/repository/jakarta/security/enterprise/jakarta.security.enterprise-api/3.0.0/jakarta.security.enterprise-api-3.0.0.jar;C:/Users/x/.m2/repository/jakarta/jms/jakarta.jms-api/3.1.0/jakarta.jms-api-3.1.0.jar;C:/Users/x/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar;C:/Users/x/.m2/repository/jakarta/mail/jakarta.mail-api/2.1.0/jakarta.mail-api-2.1.0.jar;C:/Users/x/.m2/repository/jakarta/resource/jakarta.resource-api/2.1.0/jakarta.resource-api-2.1.0.jar;C:/Users/x/.m2/repository/jakarta/authorization/jakarta.authorization-api/2.1.0/jakarta.authorization-api-2.1.0.jar;C:/Users/x/.m2/repository/jakarta/batch/jakarta.batch-api/2.1.1/jakarta.batch-api-2.1.1.jar'
 -encoding
 'UTF-8'
 -protected
 -source
-'17'
+'11'
 -sourcepath
-'D:/studia/sem5/JAVA/RPG-dice-thrower/src/main/java'
+'D:/studia/sem5/JAVA/poprawa/Gagracz.Krystian.cw4 (2)/RPG-dice-thrower/src/main/java'
 -author
 -bottom
-'Copyright &#169; 2023. All rights reserved.'
+'Copyright &#169; 2024. All rights reserved.'
 -charset
 'UTF-8'
 -d
-'D:/studia/sem5/JAVA/RPG-dice-thrower/target/site/apidocs'
+'D:/studia/sem5/JAVA/poprawa/Gagracz.Krystian.cw4 (2)/RPG-dice-thrower/target/site/apidocs'
 -docencoding
 'UTF-8'
 -doctitle
-'DiceThrower 1.0-SNAPSHOT API'
+'RPG-dice-thrower 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'D:/studia/sem5/JAVA/poprawa/Gagracz.Krystian.cw4 (2)/RPG-dice-thrower/target/javadoc-bundle-options'
 -use
 -version
 -windowtitle
-'DiceThrower 1.0-SNAPSHOT API'
-pl.polsl.kg301743.dicethrower.controller
-pl.polsl.kg301743.dicethrower
-pl.polsl.kg301743.dicethrower.model
-pl.polsl.kg301743.dicethrower.view
-D:\studia\sem5\JAVA\RPG-dice-thrower\src\main\java = 1702050036836
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\allclasses-index.html = 1702053255561
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\allpackages-index.html = 1702053255563
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\element-list = 1702053255443
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\help-doc.html = 1702053255598
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\index-all.html = 1702053255592
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\index.html = 1702053255545
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\jquery-ui.overrides.css = 1702053255711
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\member-search-index.js = 1702053255567
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\module-search-index.js = 1702053255564
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\overview-summary.html = 1702053255594
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\overview-tree.html = 1702053255539
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\package-search-index.js = 1702053255565
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\script.js = 1702053255624
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\search.js = 1702053255626
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\serialized-form.html = 1702053255494
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\stylesheet.css = 1702053255609
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\tag-search-index.js = 1702053255568
-D:\studia\sem5\JAVA\RPG-dice-thrower\target\site\apidocs\type-search-index.js = 1702053255566
+'RPG-dice-thrower 1.0-SNAPSHOT API'
+listener
+model
+servlet
+C:\Users\x\.m2\repository\jakarta\platform\jakarta.jakartaee-api\10.0.0\jakarta.jakartaee-api-10.0.0.jar = 1705145497363
+C:\Users\x\.m2\repository\jakarta\platform\jakarta.jakartaee-web-api\10.0.0\jakarta.jakartaee-web-api-10.0.0.jar = 1705145504422
+C:\Users\x\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.0.0\jakarta.servlet-api-6.0.0.jar = 1705145498184
+C:\Users\x\.m2\repository\jakarta\servlet\jsp\jakarta.servlet.jsp-api\3.1.0\jakarta.servlet.jsp-api-3.1.0.jar = 1705145497992
+C:\Users\x\.m2\repository\jakarta\el\jakarta.el-api\5.0.1\jakarta.el-api-5.0.1.jar = 1705145498071
+C:\Users\x\.m2\repository\jakarta\servlet\jsp\jstl\jakarta.servlet.jsp.jstl-api\3.0.0\jakarta.servlet.jsp.jstl-api-3.0.0.jar = 1705145498055
+C:\Users\x\.m2\repository\jakarta\faces\jakarta.faces-api\4.0.1\jakarta.faces-api-4.0.1.jar = 1705145500908
+C:\Users\x\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar = 1705145498748
+C:\Users\x\.m2\repository\jakarta\websocket\jakarta.websocket-api\2.1.0\jakarta.websocket-api-2.1.0.jar = 1705145498316
+C:\Users\x\.m2\repository\jakarta\websocket\jakarta.websocket-client-api\2.1.0\jakarta.websocket-client-api-2.1.0.jar = 1705145498477
+C:\Users\x\.m2\repository\jakarta\json\jakarta.json-api\2.1.0\jakarta.json-api-2.1.0.jar = 1705145498603
+C:\Users\x\.m2\repository\jakarta\json\bind\jakarta.json.bind-api\3.0.0\jakarta.json.bind-api-3.0.0.jar = 1705145498778
+C:\Users\x\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar = 1705145498954
+C:\Users\x\.m2\repository\jakarta\ejb\jakarta.ejb-api\4.0.1\jakarta.ejb-api-4.0.1.jar = 1705145499139
+C:\Users\x\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar = 1705145499110
+C:\Users\x\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar = 1705145499783
+C:\Users\x\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar = 1705145499594
+C:\Users\x\.m2\repository\jakarta\interceptor\jakarta.interceptor-api\2.1.0\jakarta.interceptor-api-2.1.0.jar = 1705145499508
+C:\Users\x\.m2\repository\jakarta\enterprise\jakarta.enterprise.cdi-api\4.0.1\jakarta.enterprise.cdi-api-4.0.1.jar = 1705145500270
+C:\Users\x\.m2\repository\jakarta\enterprise\jakarta.enterprise.lang-model\4.0.1\jakarta.enterprise.lang-model-4.0.1.jar = 1705145499835
+C:\Users\x\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar = 1705145500010
+C:\Users\x\.m2\repository\jakarta\authentication\jakarta.authentication-api\3.0.0\jakarta.authentication-api-3.0.0.jar = 1705145500186
+C:\Users\x\.m2\repository\jakarta\security\enterprise\jakarta.security.enterprise-api\3.0.0\jakarta.security.enterprise-api-3.0.0.jar = 1705145500594
+C:\Users\x\.m2\repository\jakarta\jms\jakarta.jms-api\3.1.0\jakarta.jms-api-3.1.0.jar = 1705145500559
+C:\Users\x\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar = 1705145500686
+C:\Users\x\.m2\repository\jakarta\mail\jakarta.mail-api\2.1.0\jakarta.mail-api-2.1.0.jar = 1705145501877
+C:\Users\x\.m2\repository\jakarta\resource\jakarta.resource-api\2.1.0\jakarta.resource-api-2.1.0.jar = 1705145501353
+C:\Users\x\.m2\repository\jakarta\authorization\jakarta.authorization-api\2.1.0\jakarta.authorization-api-2.1.0.jar = 1705145501276
+C:\Users\x\.m2\repository\jakarta\batch\jakarta.batch-api\2.1.1\jakarta.batch-api-2.1.1.jar = 1705145501503
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\src\main\java = 1706633900575
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\allclasses-index.html = 1706639225539
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\allpackages-index.html = 1706639225543
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\element-list = 1706639225347
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\help-doc.html = 1706639225572
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\index-all.html = 1706639225566
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\index.html = 1706639225507
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\jquery-ui.overrides.css = 1706639225588
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\member-search-index.js = 1706639225548
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\module-search-index.js = 1706639225544
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\overview-summary.html = 1706639225568
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\overview-tree.html = 1706639225497
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\package-search-index.js = 1706639225546
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\script.js = 1706639225577
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\search.js = 1706639225580
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\serialized-form.html = 1706639225420
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\stylesheet.css = 1706639225576
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\tag-search-index.js = 1706639225550
+D:\studia\sem5\JAVA\poprawa\Gagracz.Krystian.cw4 (2)\RPG-dice-thrower\target\site\apidocs\type-search-index.js = 1706639225547
